@@ -480,7 +480,7 @@ padding: 20px;
         display: none; /* Hide all .insta-post elements by default */
     }
     
-    .insta-post:nth-child(-n+4) {
+    .insta-post:nth-child(-n+6) {
         display: block;
     }
     
