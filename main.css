@@ -145,7 +145,7 @@ body {
 /* Home Section*/
 
 .home {
-    background-image: url('image/design.png');
+    background-image: url('design.png');
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -196,7 +196,7 @@ body {
 }
 
 .T-shirt-card img:hover {
-    content: url('image/T-shirt2.png');
+    content: url('T-shirt2.png');
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
