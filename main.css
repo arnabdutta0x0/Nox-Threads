@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+    padding-top: 100px; /* Ensure content starts below the fixed header */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Header Section */
+.header {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is on top */
+}
+
+.left-links {
+    display: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+    padding-left: 20px;
+}
+
+.search input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 5px 0 0 5px;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    color: #000;
+    outline: none;
+}
+
+.search button {
+    background-color: #fff;
+    color: #000;
+    font-size: 24px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 8px 5px 4px 5px;
+}
+
+.header img {
+    padding-right: 143px;
+    width: 80px;
+    height: 80px;
+}
+
+.header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 29px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo ion-icon {
+    margin: 0 5px;
+}
+
+.header .right-links {
+    display: flex;
+    padding-right: 30px;
+}
+
+.header .right-links button {
+    color: #fff;
+    background-color: #000;
+    margin-left: 10px;
+    padding-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.header .right-links button:hover {
+    color: #dcf542;
+    border-radius: 50px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #fff;
+    width: 60px;
+}
+
+
+
+/* Navbar Section */
+.navbar {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    background-color: #000;
+    padding: 10px 0;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 1001; /* Ensure the navbar is above the header */
+}
+
+.navbar .nav-menu{
+    max-width: 500px;
+    margin: auto;
+}
+
+.navbar div {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: #dcf542;
+    border-radius: 50px;
+}
+
+
+
+
+
+/* Home Section*/
+
+.home {
+    background-image: url('image/design.png');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    padding: 50px 0; 
+    background-color: #000;
+}
+
+.home h1 {
+    padding-top: 350px;
+    font-size: 48px; 
+    color: #fff; 
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0.3, 0.3, 0.3, 0.3);
+    letter-spacing: 10px;
+}
+
+
+/* T-shirt Section*/
+.Tshirt-section {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 240vh;
+
+}
+
+.Tshirt-section h1{
+    padding-top: 40px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.bestSelling{
+    display: flex;
+    justify-content: center;
+}
+
+.T-shirt-card {
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.T-shirt-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.T-shirt-card img:hover {
+    content: url('image/T-shirt2.png');
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.T-shirt-card h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.T-shirt-card button {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px 10px;
+    cursor: pointer;
+}
+.T-shirt-card button:hover {
+    background-color: #333;
+}
+
+/* NOX VIBE section*/
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.insta-post {
+    width: calc(25% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.insta-post a {
+    display: block;
+}
+
+.insta-post img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.insta-post:hover img {
+    transform: scale(2);
+}
+
+.insta-post::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.insta-post:hover::before {
+    opacity: 1; /* Show the semi-transparent background on hover */
+}
+
+
+
+
+/* Footer Section*/
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    border-top: 1px solid white;
+}
+
+.about, .policies, .follow-us, .newsletter {
+width: 100%;
+padding: 20px;
+}
+
+
+#wwa, #p,#o, #l,#i,#c,#i, #su{
+    text-decoration: none;
+    color: #fff;
+}
+
+#wwa:hover, #p:hover, #o:hover, #l:hover, #i:hover, #c:hover, #su:hover {
+    color: #dcf542;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.form-container input[type="email"] {
+    flex: 1;
+    padding: 11px;
+    border: 1px solid #fff; 
+    border-radius: 5px 0 0 5px;
+    font-family: "Josefin Sans";
+    font-size: 16px; 
+    color: #000; 
+    outline: none;
+}
+
+.form-container button {
+    background-color: #fff;
+    color: #000;
+    font-size: 27px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+#mail::placeholder {
+    color: #000; 
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+
+.follow-us a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.8s ease; 
+}
+
+.follow-us a:hover {
+    transform: rotate(360deg);
+}
+
+.u-line{
+    border: 1px solid #fff;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+
+.end{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/* Responsive Design for Mobile */
+
+@media (max-width: 768px) {
+    body {
+        width: 450px;
+    }
+
+    /*header section*/
+
+    .header{
+        border-bottom: 1px solid #333;
+    }
+
+    .header img {
+        padding-right: 60px;
+    }
+
+    .left-links{
+        display:block;
+    }
+
+    #acc{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .left-links button{
+        background-color: #000;
+        color: #fff;
+        font-size: 27px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        padding-top: 5px;
+        padding-right: 10px;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 20px;
+    }
+
+    .search input[type="text"] {
+        display: none;
+    }
+
+    .search button {
+       background-color: #000;
+       color: #fff;
+    }
+
+
+
+    /*home section*/
+
+    .home h1 {
+        padding-top: 300px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+
+
+    /* T-shirt Section*/
+
+    .Tshirt-section{
+        height: 290vh;
+    }
+
+    .Tshirt-section h1 {
+        padding-top: 50px;
+        font-size: 40px;
+        width: 250px;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .bestSelling {
+        white-space: nowrap;
+        overflow-x:auto;
+    }
+
+    .T-shirt-card {
+        width: 250px; 
+        flex: 0 0 auto;
+        margin-right: 10px;
+    }
+
+    .T-shirt-card h4 {
+        font-size: 20px;
+    }
+
+    .T-shirt-card button {
+        font-size: 16px;
+    }
+
+    /* NoxVibe Section*/
+
+    .post {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1000px; /* Adjust max-width as needed */
+        margin: auto;
+    }
+    
+    .insta-post {
+        width: 40%;
+        margin: 5px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        display: none; /* Hide all .insta-post elements by default */
+    }
+    
+    .insta-post:nth-child(-n+4) {
+        display: block;
+    }
+    
+
+
+
+    /*Footer Section*/
+    .footer {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    
+    .footer h3{
+        font-size: 20px;
+    }
+
+    .footer .about, .footer .policies, .footer .follow-us, .footer .newsletter {
+        width: 80%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .u-line{
+        display: none;
+    }
+}
