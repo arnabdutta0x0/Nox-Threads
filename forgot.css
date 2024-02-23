@@ -166,7 +166,7 @@ body {
     text-align: center;
 }
 
-.forgot input[type="text"], .forgot input[type="password"] {
+.forgot input[type="email"] {
     padding: 14px;
     border: 1px solid #000; 
     border-radius: 5px;
